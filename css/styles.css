@@ -1,0 +1,393 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+/*start header*/
+.header {
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+}
+
+.header .nav-bar,
+.options,
+ul,
+li,
+a {
+	height: 20px;
+	width: auto;
+}
+.header .nav-bar .options ul {
+	display: flex;
+	list-style-type: none;
+}
+
+.header .nav-bar .options ul li {
+	padding: 15px;
+}
+
+.header .nav-bar .options ul li .more::after {
+	content: "\25BC";
+	font-size: 12px;
+	margin-left: 5px;
+	position: relative;
+	top: -1px;
+}
+
+.header .nav-bar .options ul li:hover {
+	background-color: rgb(187, 184, 184);
+}
+
+.header .nav-bar .options ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.header .nav-bar .options ul li .choix {
+	background-color: white;
+	position: absolute;
+	width: 200px;
+	top: 50px;
+	left: 414px;
+	z-index: 1;
+	display: none;
+	box-shadow: 2px 3px 5px gray;
+}
+
+.header .nav-bar .options ul li:hover .choix {
+	display: block;
+}
+
+.header .nav-bar .options ul li .choix a {
+	margin: 0px;
+	display: block;
+	color: black;
+}
+
+.header .nav-bar .options ul li .choix a:hover {
+	background-color: rgb(133, 127, 127);
+}
+
+.header .nav-bar .search span {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.header .nav-bar .search span:hover {
+	background-color: tomato;
+}
+/*end header*/
+
+/*start first-content*/
+.first-content .content {
+	position: relative;
+}
+
+.first-content .content h3 {
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20%;
+	font-size: 20px;
+}
+
+.first-content .content p {
+	color: white;
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	transform: translateX(-50%);
+}
+/*end first-content*/
+
+/*start second-content*/
+.second-content {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.second-content h2 {
+	letter-spacing: 3px;
+	font-weight: 200;
+	font-size: 30px;
+	margin: 20px 0px;
+}
+
+.second-content p {
+	color: rgb(167, 161, 161);
+	margin: 20px 0px;
+}
+
+.second-content div {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 20px auto;
+	text-align: justify;
+	font-size: 15px;
+	width: 900px;
+	display: flex;
+	line-height: 1.5;
+}
+
+.second-content .cartes {
+	margin: 60px auto;
+}
+
+.second-content .cartes img {
+	margin-top: 20px;
+}
+
+.second-content .cartes .carte1 {
+	margin-left: 70px;
+}
+
+.second-content .cartes .carte1,
+.carte2,
+.carte3 {
+	position: relative;
+}
+
+.second-content .cartes .img1,
+.img2,
+.img3 {
+	position: absolute;
+	left: 25%;
+	top: -30px;
+	margin-bottom: 25px;
+}
+/*end second-content*/
+
+/*start third-content*/
+.third-content {
+	margin-top: 40px;
+	text-align: center;
+	background-color: black;
+}
+
+.third-content h2 {
+	letter-spacing: 3px;
+	font-weight: 200;
+	padding-top: 80px;
+	font-size: 30px;
+	margin: 20px 0px;
+	color: white;
+}
+
+.third-content p {
+	color: rgb(167, 161, 161);
+	margin: 20px 0px;
+}
+
+.third-content .sold {
+	background-color: white;
+	width: 900px;
+	margin: 20px auto;
+	text-align: start;
+}
+
+.third-content .sold div {
+	padding: 10px 10px;
+	color: rgb(167, 161, 161);
+}
+
+.third-content .sold div:not(:last-child) {
+	border-bottom: 1px solid rgb(167, 161, 161);
+}
+
+.third-content .sold div span {
+	margin-left: 20px;
+	background-color: tomato;
+	padding: 3px 5px;
+	color: white;
+}
+
+.third-content .sold div .last-span {
+	margin-left: 85%;
+	background-color: black;
+	color: white;
+	border-radius: 50%;
+	padding: 3px 10px;
+}
+
+.third-content .cards {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+.third-content .cards h4 {
+	color: black;
+}
+
+.third-content .cards .card1,
+.card2,
+.card3 {
+	margin: auto 10px;
+}
+
+.third-content .cards .img-content {
+	background-color: white;
+	width: 250px;
+	height: 190px;
+	margin-bottom: 20px;
+	margin-top: -5px;
+}
+
+.third-content .cards .img-content h4 {
+	position: relative;
+	text-align: start;
+	top: 15px;
+	left: 20px;
+}
+
+.third-content .cards .img-content p {
+	position: relative;
+	text-align: start;
+	top: 10px;
+	left: 20px;
+}
+
+.third-content .cards .img-content div {
+	text-align: justify;
+	padding: 5px 20px;
+	word-spacing: -2px;
+	font-size: 15px;
+	word-wrap: wrap;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.third-content .cards .img-content .botton {
+	background-color: black;
+	padding: 10px 15px;
+	color: white;
+	width: 90px;
+	position: relative;
+	top: 10px;
+	left: 20px;
+	cursor: pointer;
+}
+
+.third-content .cards .img-content .botton:hover {
+	background-color: rgb(175, 165, 165);
+	color: black;
+}
+
+/*end third-content*/
+
+/*start fourth-content*/
+.fourth-content {
+	margin-bottom: 150px;
+}
+
+.fourth-content .fourth-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.fourth-content h2 {
+	letter-spacing: 3px;
+	font-weight: 200;
+	padding-top: 50px;
+	font-size: 30px;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.fourth-content p {
+	color: rgb(167, 161, 161);
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.fourth-content .contact .cont {
+	display: flex;
+	align-items: center;
+}
+
+.fourth-content .contact .cont h5 {
+	font-size: 15px;
+	margin-left: 5px;
+	font-weight: 200;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fourth-content .infos {
+	width: 400px;
+	position: relative;
+}
+
+.fourth-content .infos input {
+	padding: 10px 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border: 2px solid rgb(153, 151, 151);
+	width: 150px;
+}
+
+.fourth-content .infos input:focus {
+	border: 1px solid black;
+}
+
+.fourth-content .infos input:last-child {
+	width: 340px;
+}
+
+.fourth-content .send {
+	position: absolute;
+	right: 35px;
+	bottom: -50px;
+	padding: 10px 15px;
+	background-color: rgb(22, 20, 20);
+	color: white;
+	cursor: pointer;
+}
+
+.fourth-content .send:hover {
+	background-color: rgb(153, 151, 151);
+	color: black;
+}
+
+/*end fourth-content*/
+
+/*start social*/
+.last-content {
+	margin-bottom: 70px;
+}
+
+.last-content .social {
+	text-align: center;
+	font-size: 25px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.last-content .social i:hover {
+	color: rgb(153, 151, 151);
+	font-size: 30px;
+}
+
+.last-content .link,
+.last-content a {
+	text-align: center;
+	color: rgb(153, 151, 151);
+}
